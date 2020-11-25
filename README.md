@@ -33,3 +33,13 @@ Using ffmpeg, ffprobe, and the fluent-ffmpeg libraries to get file JSON, single 
 [13](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/13.mp4)
 [14](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/14.mp4)
 [15](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/15.mp4)
+[16](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/16.mp4)
+[17](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/17.mp4)
+[18](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/18.mp4)
+
+## get inspector data for all the segments
+[http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures)
+
+
+
+
