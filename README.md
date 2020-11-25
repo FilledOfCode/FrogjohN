@@ -8,3 +8,20 @@ Using ffmpeg, ffprobe, and the fluent-ffmpeg libraries to get file JSON, single 
 `https://github.com/maubertw/group-of-pictures.git`
 2.  Run `npm install` if you have npm locally or `npm install --save-dev nodemon` if you don't
 3.  Run `npm start`
+
+## get JSON
+-- This link will show the JSON video metadata for the CoolVideo file <br/>
+
+[http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures.json](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures.json)
+
+## get a single fruit
+-- Here you can get a single group of pictures by index (excluding 0) <br/>
+
+(`http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/<index>.mp4`)
+[1](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/1.mp4)
+[2](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/2.mp4)
+[3](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/3.mp4)
+[4](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/4.mp4)
+[5](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/5.mp4)
+[6](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/6.mp4)
+[7](http://localhost:3000/videos/CoolVideo.mp4/group-of-pictures/7.mp4)
