@@ -7,3 +7,5 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var videosRouter = require('./routes/videos');
 
+
+var app = expr
