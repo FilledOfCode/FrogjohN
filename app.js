@@ -8,4 +8,6 @@ var indexRouter = require('./routes/index');
 var videosRouter = require('./routes/videos');
 
 
-var app = expr
+var app = express();
+
+// vie
