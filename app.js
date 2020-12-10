@@ -11,4 +11,5 @@ var videosRouter = require('./routes/videos');
 var app = express();
 
 // view engine setup
-app.set('views', path.join(__dirname, 'view
+app.set('views', path.join(__dirname, 'views'));
+app.
