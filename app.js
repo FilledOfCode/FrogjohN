@@ -16,4 +16,5 @@ app.set('view engine', 'jade');
 app.set('json spaces', 4);
 
 app.use(logger('dev'));
-app.use(exp
+app.use(express.json());
+a
