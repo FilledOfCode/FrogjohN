@@ -17,4 +17,4 @@ app.set('json spaces', 4);
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ exte
+app.use(express.urlencoded({ extended: false }));
