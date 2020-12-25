@@ -25,4 +25,4 @@ app.use('/', indexRouter);
 app.use('/videos', videosRouter);
 
 
-// catc
+// catch 404 
