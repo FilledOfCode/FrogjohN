@@ -27,4 +27,4 @@ app.use('/videos', videosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createE
+  next(createError(404
