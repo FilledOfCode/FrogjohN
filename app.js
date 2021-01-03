@@ -30,4 +30,5 @@ app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error hand
+// error handler
+app.use(func
