@@ -31,4 +31,4 @@ app.use(function(req, res, next) {
 });
 
 // error handler
-app.use(func
+app.use(function(err,
