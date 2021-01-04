@@ -32,4 +32,4 @@ app.use(function(req, res, next) {
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only
+  // set locals, only providing e
