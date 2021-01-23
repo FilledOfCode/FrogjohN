@@ -1,2 +1,16 @@
 
 #!/usr/bin/env node
+
+/**
+ * Module dependencies.
+ */
+
+var app = require('../app');
+var debug = require('debug')('gop:server');
+var http = require('http');
+
+ var cluster = require('cluster');
+ var { cpus } = require('os');
+ var process = require('process');
+ 
+const numCPUs = cpus().length;
