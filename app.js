@@ -42,4 +42,6 @@ app.use(function(err, req, res, next) {
 });
   
 
-module.exports = a
+module.exports = app;
+
+
