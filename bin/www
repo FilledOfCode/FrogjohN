@@ -24,3 +24,15 @@ if (cluster.isMaster) {
   }
 
   cluster.on('exit', (worker, code, signal) => {
+    console.log(`worker ${worker.process.pid} died`);
+  });
+  cluster.on('error', (data, data2) => {
+    console.log('THERE WAS SOME ERROR GETTING THE CLUSTER ', data, data2)
+  })
+} else {
+  /**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
