@@ -36,3 +36,11 @@ if (cluster.isMaster) {
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+
+/**
+ * Create HTTP server.
+ */
+
+  var server = http.createServer(app);
+
+  /**
