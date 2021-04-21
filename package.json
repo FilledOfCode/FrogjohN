@@ -3,4 +3,4 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/ww
+    "start": "nodemon ./bin/www -e html,css,ja
