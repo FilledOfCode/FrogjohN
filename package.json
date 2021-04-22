@@ -5,4 +5,5 @@
   "scripts": {
     "start": "nodemon ./bin/www -e html,css,jade,js"
   },
-  "dependen
+  "dependencies": {
+ 
