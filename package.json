@@ -6,4 +6,5 @@
     "start": "nodemon ./bin/www -e html,css,jade,js"
   },
   "dependencies": {
-    "babel
+    "babel": "^6.23.0",
+  
