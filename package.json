@@ -7,4 +7,5 @@
   },
   "dependencies": {
     "babel": "^6.23.0",
-    "cookie-parser": 
+    "cookie-parser": "~1.4.4",
+ 
