@@ -8,4 +8,5 @@
   "dependencies": {
     "babel": "^6.23.0",
     "cookie-parser": "~1.4.4",
-    "debug": 
+    "debug": "~2.6.9",
+    "e
