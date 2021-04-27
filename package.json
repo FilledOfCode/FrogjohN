@@ -11,4 +11,5 @@
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "express-rate-limit": "^5.3.0",
-    "ffmpeg": "0.
+    "ffmpeg": "0.0.4",
+    "
