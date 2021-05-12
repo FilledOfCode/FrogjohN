@@ -16,4 +16,5 @@
     "ffprobe-static": "^3.0.0",
     "fluent-ffmpeg": "^2.1.2",
     "http-errors": "~1.6.3",
-    "jade":
+    "jade": "~1.11.0",
+  
