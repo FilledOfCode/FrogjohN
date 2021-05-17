@@ -18,4 +18,5 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "node-ffprobe": "^3.0.
+    "node-ffprobe": "^3.0.0",
+    "
