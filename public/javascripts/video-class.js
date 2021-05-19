@@ -33,3 +33,18 @@ class Video {
                     console.log(`stderr: ${stderr}`);
                 }
             });
+            // parse the output buffer and select the frames property
+            const json = JSON.parse(process.toString('utf8'))['frames'];
+          // only return the data for the iFrames  
+          return this.filterIFrames(json);
+    }
+
+    /**
+     * @param {number} index, index of the requested GOP
+     * @param {Response} writeStream
+     */
+    getSingleGop = async (index, writeStream) => { 
+        try {
+            const { start, end } = this.getStartEndGop(index);
+            // create a readable stream of the video file to pass to the command
+            const readStream = await fs.createReadStream(this.path + '.mp4');
