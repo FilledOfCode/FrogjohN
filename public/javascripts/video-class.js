@@ -23,3 +23,13 @@ class Video {
         const command = `"ffprobe" -show_frames -print_format json ${this.path}.mp4`
         // run the command as a child process
         const process = execSync(
+            command, 
+            {maxBuffer: 10240 * 50000}, 
+            (error, stdout, stderr) => {
+                if (error) {
+                    console.log(`error: ${error.message}`);
+                }
+                if (stderr) {
+                    console.log(`stderr: ${stderr}`);
+                }
+            });
