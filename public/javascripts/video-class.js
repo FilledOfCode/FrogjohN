@@ -59,3 +59,9 @@ class Video {
               .addOutputOptions('-movflags +frag_keyframe+separate_moof+omit_tfhd_offset+empty_moov')
               .format('mp4')
               .on('end', (data) => {
+                console.log('file written successfully');
+              })
+              .on('stderr', (e) => {
+                  console.log('STDERR SINGLE CLIP', e);
+              })
+              .on('error', (e) => {
