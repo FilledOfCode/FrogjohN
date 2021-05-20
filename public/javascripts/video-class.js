@@ -65,3 +65,13 @@ class Video {
                   console.log('STDERR SINGLE CLIP', e);
               })
               .on('error', (e) => {
+                console.log('ERROR GETTING SINGLE CLIP', e);
+              })
+              // pipe the output data directly on the write stream and send the response
+              .pipe(writeStream, {end: true});
+        } catch (e) {
+            console.log('get single gop process failed ', e);
+        }
+    }
+
+    getInspectorData = () => {
