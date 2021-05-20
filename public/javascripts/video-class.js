@@ -48,3 +48,14 @@ class Video {
             const { start, end } = this.getStartEndGop(index);
             // create a readable stream of the video file to pass to the command
             const readStream = await fs.createReadStream(this.path + '.mp4');
+            // keep the connection alive to account for longer response times
+            writeStream.setHeader('Connection', 'Keep-Alive');
+            // set the correct mime type so the client knows what to do with the response object
+            writeStream.contentType('mp4');
+            ffmpeg(readStream)
+              .setStartTime(start)
+              .duration(end)
+              // move the metadata to the front of the file so that it is streamable
+              .addOutputOptions('-movflags +frag_keyframe+separate_moof+omit_tfhd_offset+empty_moov')
+              .format('mp4')
+              .on('end', (data) => {
