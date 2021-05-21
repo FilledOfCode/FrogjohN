@@ -75,3 +75,12 @@ class Video {
     }
 
     getInspectorData = () => {
+        // use the iframe json to get the inspector view data and build the GOP urls for the playable clips
+        return this.json.map((_, i) => {
+            const { start, end } = this.getStartEndGop(i);
+            const url = `http://localhost:3000/videos/${this.name}.mp4/group-of-pictures/${i}.mp4`;
+            return { start, end: +start+end, url };
+        });
+    }    
+
+    /**
