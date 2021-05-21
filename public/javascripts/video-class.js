@@ -101,3 +101,18 @@ class Video {
      */
     getStartEndGop = (frameIndex) => {
         let isLastFrame = false;
+        if(frameIndex > this.iframeJson.length-1) {
+            return `The frame you requested is out of range, your selection must be between 0 and  ${this.json.length-1}`;
+        }
+        if (frameIndex === this.iframeJson.length-1) {
+            isLastFrame = true;
+        }
+        const start = this.json[frameIndex].best_effort_timestamp_time;
+        // Bug with calculating duration, so setting the duration to a constant 3 seconds
+        const end = 3; // isLastFrame ? this.getDuration() : this.json[frameIndex+1].best_effort_timestamp_time; 
+        return { start, end };
+    }
+
+    getDuration = () => {
+        // if looking at the last clip, there is no following clip
+        // to calculate end, so instead find the length of the video
