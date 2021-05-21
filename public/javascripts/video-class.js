@@ -84,3 +84,20 @@ class Video {
     }    
 
     /**
+     * @param {JSON} data
+     */
+    filterIFrames = (data) => {
+        const iFrames = [];
+        for(let j in data) {
+            if(data[j].pict_type == 'I') {
+                iFrames.push(data[j]);
+            }
+        };
+        return iFrames;
+    }
+        
+    /**
+     * @param {number} frameIndex
+     */
+    getStartEndGop = (frameIndex) => {
+        let isLastFrame = false;
