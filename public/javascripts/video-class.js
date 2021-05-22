@@ -128,3 +128,13 @@ class Video {
                     console.log(`stderr: ${stderr}`);
                 }
             });
+            const duration = JSON.parse(process.toString('utf8')).streams[0].duration;
+            return duration;   
+    }
+
+}
+
+
+module.exports = { 
+    Video,
+}
