@@ -116,3 +116,15 @@ class Video {
     getDuration = () => {
         // if looking at the last clip, there is no following clip
         // to calculate end, so instead find the length of the video
+        const command = `"ffprobe" -of json -show_streams -show_format ${this.path}.mp4`;
+        const process = execSync(
+            command,
+            {maxBuffer: 10240 * 5000},
+            (error, stdout, stderr) => {
+                if (error) {
+                    console.log(`error: ${error.message}`);
+                }
+                    if (stderr) {
+                    console.log(`stderr: ${stderr}`);
+                }
+            });
