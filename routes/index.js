@@ -3,4 +3,4 @@ let router = express.Router();
 
 
 router.get('/', function(req, res, next) {
-  r
+  res.send('hi
