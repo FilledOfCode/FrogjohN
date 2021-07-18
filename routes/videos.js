@@ -1,3 +1,3 @@
 let express = require('express');
 let router = express.Router();
-const { Video } = require('..
+const { Video } = require('../public/javasc
