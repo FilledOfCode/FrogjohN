@@ -8,4 +8,5 @@ router.get('/:videoId.mp4/group-of-pictures.json', async function(req, res, next
   try {
     const video = new Video(req.params.videoId);
     res.send(video.json);
-  }
+  } catch (e) {
+  
