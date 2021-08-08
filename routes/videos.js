@@ -7,4 +7,5 @@ const { Video } = require('../public/javascripts/video-class');
 router.get('/:videoId.mp4/group-of-pictures.json', async function(req, res, next) {
   try {
     const video = new Video(req.params.videoId);
-    res.send(video.js
+    res.send(video.json);
+  }
