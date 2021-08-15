@@ -9,4 +9,4 @@ router.get('/:videoId.mp4/group-of-pictures.json', async function(req, res, next
     const video = new Video(req.params.videoId);
     res.send(video.json);
   } catch (e) {
-    console.log('ERROR I
+    console.log('ERROR IN GET JSON
