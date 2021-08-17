@@ -15,4 +15,4 @@ router.get('/:videoId.mp4/group-of-pictures.json', async function(req, res, next
 });
 
 
-// Ge
+// Get a single GOP b
