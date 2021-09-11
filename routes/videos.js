@@ -16,4 +16,4 @@ router.get('/:videoId.mp4/group-of-pictures.json', async function(req, res, next
 
 
 // Get a single GOP by index // TODO: Fix bug with getting 0th group
-router.get('/:videoName.mp4/group-of-pictures/
+router.get('/:videoName.mp4/group-of-pictures/:groupInd
