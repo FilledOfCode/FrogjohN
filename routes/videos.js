@@ -19,4 +19,5 @@ router.get('/:videoId.mp4/group-of-pictures.json', async function(req, res, next
 router.get('/:videoName.mp4/group-of-pictures/:groupIndex.mp4', (req, res, next) => { 
   try {
     const video = new Video(req.params.videoName);
-    video.getSingleGop(+req.params.gro
+    video.getSingleGop(+req.params.groupIndex, res);
+  }
