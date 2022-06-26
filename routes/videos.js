@@ -21,4 +21,4 @@ router.get('/:videoName.mp4/group-of-pictures/:groupIndex.mp4', (req, res, next)
     const video = new Video(req.params.videoName);
     video.getSingleGop(+req.params.groupIndex, res);
   } catch (e) {
-    console.log('ERROR I
+    console.log('ERROR IN GET CL
