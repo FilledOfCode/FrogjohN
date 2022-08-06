@@ -28,4 +28,4 @@ router.get('/:videoName.mp4/group-of-pictures/:groupIndex.mp4', (req, res, next)
 
 
 // Get html page with each group of pictures (playable mp4) and accompanying metadata
-router.get('/:videoName
+router.get('/:videoName.mp4/group
