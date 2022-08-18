@@ -31,4 +31,5 @@ router.get('/:videoName.mp4/group-of-pictures/:groupIndex.mp4', (req, res, next)
 router.get('/:videoName.mp4/group-of-pictures', (req, res, next) => {
   try {
     const video = new Video(req.params.videoName);
-    const inspectorData = video.getInspectorDa
+    const inspectorData = video.getInspectorData();
+    
