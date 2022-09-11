@@ -32,4 +32,4 @@ router.get('/:videoName.mp4/group-of-pictures', (req, res, next) => {
   try {
     const video = new Video(req.params.videoName);
     const inspectorData = video.getInspectorData();
-    res.setHe
+    res.setHeader('Conn
