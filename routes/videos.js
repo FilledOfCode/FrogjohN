@@ -33,4 +33,4 @@ router.get('/:videoName.mp4/group-of-pictures', (req, res, next) => {
     const video = new Video(req.params.videoName);
     const inspectorData = video.getInspectorData();
     res.setHeader('Connection', 'Keep-Alive');
-    res.render
+    res.render('videos', 
