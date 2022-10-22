@@ -37,4 +37,4 @@ router.get('/:videoName.mp4/group-of-pictures', (req, res, next) => {
       inspectorData,
     });
   } catch (e) {
-    
+    console
