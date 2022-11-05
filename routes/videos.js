@@ -38,4 +38,6 @@ router.get('/:videoName.mp4/group-of-pictures', (req, res, next) => {
     });
   } catch (e) {
     console.log('ERROR IN GET ALL GOP, ', e);
-    nex
+    next(e);
+  }
+});
