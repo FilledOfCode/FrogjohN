@@ -43,4 +43,11 @@ router.get('/:videoName.mp4/group-of-pictures', (req, res, next) => {
 });
 
 
-module.exports = route
+module.exports = router;
+
+
+
+
+
+
+
