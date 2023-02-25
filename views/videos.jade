@@ -1,2 +1,10 @@
 
 extends layout
+block content
+
+
+  h1 Cool Video Group of Pictures
+  each val, index in inspectorData 
+    h1 Group #{index}
+    p from #{val.start} to #{val.end}
+    video(type="video/mp4" controls src=val.url width="352" height="264")  
